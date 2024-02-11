@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "products_in_slides",
+  "info": {
+    "singularName": "products-in-slide",
+    "pluralName": "products-in-slides",
+    "displayName": "Products in Slide",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "customField",
+      "options": {
+        "preset": "custom"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

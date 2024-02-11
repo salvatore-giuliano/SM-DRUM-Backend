@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "info_sites",
+  "info": {
+    "singularName": "info-site",
+    "pluralName": "info-sites",
+    "displayName": "Info Site",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contacts": {
+      "displayName": "contacts",
+      "type": "component",
+      "repeatable": false,
+      "component": "info.contacts"
+    }
+  }
+}

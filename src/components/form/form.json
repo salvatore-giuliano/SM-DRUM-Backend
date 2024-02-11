@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_form_forms",
+  "info": {
+    "displayName": "Form",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fields": {
+      "displayName": "Input",
+      "type": "component",
+      "repeatable": true,
+      "component": "form.input"
+    },
+    "successSendMessage": {
+      "type": "string"
+    },
+    "errorSendMessage": {
+      "type": "string"
+    }
+  }
+}

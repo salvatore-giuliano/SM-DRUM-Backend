@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_page_images_blocks",
+  "info": {
+    "displayName": "imagesBlock",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "horizontalImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "verticalImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

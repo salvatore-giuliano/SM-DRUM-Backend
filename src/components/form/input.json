@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_form_inputs",
+  "info": {
+    "displayName": "Input",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "email",
+        "password",
+        "number",
+        "data",
+        "tel",
+        "textarea"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "errorMessage": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "errorRequired": {
+      "type": "string"
+    }
+  }
+}

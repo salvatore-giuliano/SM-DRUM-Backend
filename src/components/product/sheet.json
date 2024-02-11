@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_product_sheets",
+  "info": {
+    "displayName": "Sheet",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "subLabel": {
+      "type": "string"
+    },
+    "subValue": {
+      "type": "string"
+    }
+  }
+}
