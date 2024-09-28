@@ -17,6 +17,37 @@ export interface SeoSeo extends Struct.ComponentSchema {
   };
 }
 
+export interface ProductSheet extends Struct.ComponentSchema {
+  collectionName: 'components_product_sheets';
+  info: {
+    displayName: 'Sheet';
+    description: '';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+    subLabel: Schema.Attribute.String;
+    subValue: Schema.Attribute.String;
+  };
+}
+
+export interface ProductDescription extends Struct.ComponentSchema {
+  collectionName: 'components_product_descriptions';
+  info: {
+    displayName: 'Description';
+    description: '';
+  };
+  attributes: {
+    text: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'myCustomPreset';
+        }
+      >;
+  };
+}
+
 export interface PageTextBlock extends Struct.ComponentSchema {
   collectionName: 'components_page_text_blocks';
   info: {
@@ -47,37 +78,6 @@ export interface PageImagesBlock extends Struct.ComponentSchema {
     verticalImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
-  };
-}
-
-export interface ProductSheet extends Struct.ComponentSchema {
-  collectionName: 'components_product_sheets';
-  info: {
-    displayName: 'Sheet';
-    description: '';
-  };
-  attributes: {
-    label: Schema.Attribute.String;
-    value: Schema.Attribute.String;
-    subLabel: Schema.Attribute.String;
-    subValue: Schema.Attribute.String;
-  };
-}
-
-export interface ProductDescription extends Struct.ComponentSchema {
-  collectionName: 'components_product_descriptions';
-  info: {
-    displayName: 'Description';
-    description: '';
-  };
-  attributes: {
-    text: Schema.Attribute.RichText &
-      Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
-        {
-          preset: 'myCustomPreset';
-        }
-      >;
   };
 }
 
@@ -248,10 +248,10 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'seo.seo': SeoSeo;
-      'page.text-block': PageTextBlock;
-      'page.images-block': PageImagesBlock;
       'product.sheet': ProductSheet;
       'product.description': ProductDescription;
+      'page.text-block': PageTextBlock;
+      'page.images-block': PageImagesBlock;
       'menu.social': MenuSocial;
       'menu.menu': MenuMenu;
       'info.contacts': InfoContacts;
