@@ -12,14 +12,14 @@
     "richTitle": {
       "type": "customField",
       "options": {
-        "preset": "custom"
+        "preset": "myCustomPreset"
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
     "abstract": {
       "type": "customField",
       "options": {
-        "preset": "custom"
+        "preset": "myCustomPreset"
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
